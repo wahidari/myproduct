@@ -1,0 +1,728 @@
+/*--------------------------------------------------------------
+# Root Color
+--------------------------------------------------------------*/
+:root {
+    --blue-primary: #02897a;
+    --blue-dark: #027366;
+    --blue-light: #f6faff;
+
+    --white-primary: #ffffff;
+    --white-secondary: #e4e9f3;
+
+    --black-primary: #1f2e35;
+    --black-secondary: #30444e;
+    --black-light: #263942;
+}
+
+body.dark-theme {
+    --background-color-primary: var(--black-primary);
+    --background-color-secondary: var(--black-light);
+
+    --text-color: var(--white-primary);
+    --text-color-secondary: var(--white-secondary);
+
+    --border-color: var(--black-light);
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--background-color-primary);
+
+    --background-color-primary: var(--white-primary);
+    --background-color-secondary: var(--blue-light);
+
+    --text-color: var(--black-primary);
+    --text-color-secondary: var(--black-secondary);
+
+    --border-color: var(--white-secondary);
+}
+
+.text-success {
+    color: #02897a !important;
+}
+
+.btn-success {
+    border: 0;
+    background-color: #02897a !important;
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.01)
+    );
+}
+
+a.btn-success:hover {
+    color: #fff !important;
+    background-color: #027366 !important;
+}
+
+button.btn-success:hover {
+    color: #fff !important;
+    background-color: #048f5a !important;
+}
+
+.bg-success {
+    background-color: #02897a !important;
+}
+
+h2 {
+    font-weight: 600;
+    color: #1f2e35;
+    line-height: 150%;
+    font-size: calc(1rem + 1.5vw);
+}
+
+.float{
+	position:fixed;
+	bottom:300px;
+    right:10px;
+    z-index: 1000;
+    padding: 4px 8px;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+}
+
+/* NAVBAR */
+
+.navbar {
+    background-color: var(--background-color-primary);
+}
+
+.navbar-brand {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: var(--text-color) !important;
+    font-size: 30px;
+}
+
+.nav-item a {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.nav-item a:hover {
+    font-weight: 600;
+}
+
+.active > a {
+    font-weight: 600;
+}
+
+.nav-item-custom a {
+    color: var(--black-primary);
+}
+
+.nav-item-custom a:hover {
+    color: var(--black-primary);
+}
+
+.nav-item {
+    margin-right: 16px;
+    padding: 0.5rem 0;
+}
+
+.navbar-toggler {
+    color: var(--text-color);
+}
+
+/* HERO */
+
+.bd-masthead {
+    padding: 2rem 0;
+    background: linear-gradient(
+        165deg,
+        var(--background-color-primary) 50%,
+        var(--background-color-secondary) 50%
+    );
+}
+
+.hero h1 {
+    font-size: calc(1.5rem + 1.5vw);
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 130%;
+}
+
+.hero h6 {
+    font-weight: 400;
+    line-height: 180%;
+    font-size: 18px;
+    color: var(--text-color-secondary);
+}
+
+.hero a {
+    font-weight: 600;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .hero h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .hero h6 {
+        margin: 0px 50px;
+        text-align: center;
+    }
+
+    .center-sm {
+        text-align: center;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... } */
+
+/* WHY US */
+
+.why-us {
+    margin-top: 100px;
+}
+
+.why-us h2 {
+    color: var(--text-color);
+}
+
+.why-us p {
+    font-weight: 400;
+    color: var(--text-color-secondary);
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.why-us h5 {
+    font-weight: 600;
+    color: var(--text-color-secondary);
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.why-us img {
+    max-width: 70px;
+    height: auto;
+}
+
+.masthead-followup-icon {
+    padding: 0.75rem;
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.01)
+    );
+    border-radius: 0.75rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.bd-bg-purple-bright {
+    background-color: #7952b3;
+}
+
+.purple-bright {
+    color: #7952b3;
+}
+
+/* COMFORT */
+
+.comfort {
+    margin-top: 100px;
+}
+
+.comfort h2 {
+    color: var(--text-color);
+}
+
+.comfort p {
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: var(--text-color-secondary);
+    font-size: 17px;
+    line-height: 180%;
+}
+
+.comfort p.card {
+    background-color: var(--background-color-secondary);
+}
+
+.comfort a {
+    font-weight: 600;
+}
+
+.comfort h6 {
+    color: var(--text-color-secondary);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 180%;
+}
+
+/* FEATURED */
+
+.featured {
+    margin-top: 100px;
+}
+
+.featured h2 {
+    color: var(--text-color);
+}
+
+.featured p {
+    color: var(--text-color-secondary);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 180%;
+}
+
+.featured .card {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.featured .card p {
+    color: #30444e;
+    font-size: 16px;
+    line-height: 180%;
+}
+
+.featured a {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--black-primary);
+    line-height: 150%;
+}
+
+.featured a:hover {
+    color: var(--blue-primary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* PRICELIST */
+
+.pricelist {
+    margin-top: 100px;
+}
+
+.pricelist h5 {
+    /* color: var(--text-color); */
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.pricelist p {
+    color: var(--text-color-secondary);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 180%;
+}
+
+.card h2 {
+    color: #05a065 !important;
+}
+
+.pricelist h2 {
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.pricelist h3 {
+    font-size: calc(2.5rem + 2.5vw);
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.pricelist .text-sub {
+    color: var(--text-color-secondary);
+    font-size: 20px;
+}
+
+.pricelist .card {
+    border-radius: 16px;
+    background-color: var(--background-color-secondary);
+}
+
+.pricelist .list-group-item {
+    border: 0px;
+    padding: 0;
+}
+
+.pricelist a {
+    font-weight: 600;
+}
+
+.list-group-item {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* TESTIMONI */
+
+.testimoni {
+    margin-top: 100px;
+}
+
+.testimoni h2 {
+    color: var(--text-color);
+}
+
+.testimoni h4 {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.testimoni h5 {
+    color: var(--black-light);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.testimoni h6 {
+    color: var(--text-color-secondary);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 180%;
+}
+
+.testimoni p {
+    color: var(--black-light);
+    font-weight: 400;
+    line-height: 180%;
+}
+
+.testimoni img {
+    /* border: 3px solid #007BFF; */
+    max-width: 80px;
+    border-radius: 100%;
+}
+
+/* CTA */
+
+.cta {
+    margin-top: 40px;
+}
+
+.cta .call-action {
+    border-radius: 32px;
+    background: linear-gradient(165deg, #02897a 60%, #027769 40%);
+}
+
+.cta p {
+    font-size: 18px;
+}
+
+.cta h3 {
+    font-weight: 600;
+    line-height: 160%;
+}
+
+/* FOOTER  */
+
+.page-footer {
+    margin-top: 70px;
+    background-color: var(--background-color-primary);
+}
+
+.border-top {
+    border-top: 1px solid var(--border-color) !important;
+}
+
+.social-link {
+    width: 20px;
+}
+
+.page-footer h6 {
+    font-weight: 500;
+    color: var(--text-color-secondary);
+}
+
+.page-footer a {
+    color: var(--text-color-secondary);
+}
+
+.footer-copyright {
+    color: var(--text-color);
+}
+
+a.link-icon:hover {
+    color: #e3eeff;
+    background-color: #048f5a;
+}
+
+.page-footer li {
+    margin-bottom: 8px;
+}
+
+a.link-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.page-footer .link-icon {
+    color: #048f5a;
+    padding: 6px 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: #e3eeff;
+}
+
+.footer-brand {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+}
+
+a.footer-brand:hover {
+    text-decoration: none;
+}
+
+.text-custom {
+    line-height: 180%;
+    color: var(--text-color-secondary);
+}
+
+
+/* CUSTOMERS PAGE  */
+/* CUSTOMERS PAGE  */
+/* CUSTOMERS PAGE  */
+
+.customer-client h2 {
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.customer-why h2 {
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.customer-why {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    background-color: var(--background-color-secondary);
+}
+
+.customer-why h5 {
+    color: var(--text-color);
+}
+
+.customer-why p {
+    color: var(--text-color-secondary);
+}
+
+.customer-why .border {
+    border: 1px solid #DEDEDE !important;
+}
+
+.customer-how h2, h3 {
+    color: var(--text-color);
+}
+
+.customer-how h3 {
+    font-size: calc(1rem + 1.1vw);
+}
+
+.customer-how p {
+    color: var(--text-color-secondary);
+    line-height: 180%;
+}
+
+.customer-join {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    background-color: var(--background-color-secondary);
+}
+
+.customer-join h2, h4 {
+    color: var(--text-color);
+}
+
+.customer-join  p {
+    color: var(--text-color-secondary);
+}
+
+.customer-join a {
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.customer-join a:hover {
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+
+/* PRICING PAGE  */
+/* PRICING PAGE  */
+/* PRICING PAGE  */
+
+
+.pricing-pricelist h5 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+.pricing-pricelist p {
+    color: var(--text-color-secondary);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 180%;
+}
+
+.card h2 {
+    color: #05a065 !important;
+}
+
+.pricing-pricelist h2 {
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.pricing-pricelist h3 {
+    font-size: calc(2.5rem + 2.5vw);
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.pricing-pricelist .text-sub {
+    color: var(--text-color-secondary);
+    font-size: 20px;
+}
+
+.pricing-pricelist .card {
+    border-radius: 16px;
+    background-color: var(--background-color-secondary);
+}
+
+.pricing-pricelist .list-group-item {
+    border: 0px;
+    padding: 0;
+}
+
+.pricing-pricelist a {
+    font-weight: 600;
+}
+
+.list-group-item {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.pricing-interested {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    background-color: var(--background-color-secondary);
+}
+
+.pricing-interested h2 {
+    color: var(--text-color);
+}
+
+.pricing-interested p {
+    color: var(--text-color-secondary);
+}
+
+.pricing-how h2 {
+    color: var(--text-color);
+}
+
+.pricing-how p {
+    color: var(--text-color-secondary);
+}
+
+.pricing-faq h2 {
+    color: var(--text-color);
+}
+
+.pricing-faq .card {
+    border-radius: 16px;
+    background-color: var(--background-color);
+}
+
+.pricing-faq .card-body {
+    color: var(--text-color-secondary);
+}
+
+.pricing-faq a {
+    color: var(--text-color);
+}
+
+.pricing-faq p {
+    color: var(--text-color-secondary);
+}
+
+
+/* RESOURCE PAGE  */
+/* RESOURCE PAGE  */
+/* RESOURCE PAGE  */
+
+
+.resource-hero h1 {
+    color: var(--text-color);
+    line-height: 150%;
+    font-weight: 700;
+}
+
+.resource-hero p, .resource-hero h6 {
+    color: var(--text-color-secondary);
+    line-height: 180%;
+}
+
+.resource-hero h6 {
+    font-weight: 400;
+    line-height: 180%;
+    font-size: 18px;
+    color: var(--text-color-secondary);
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .resource-hero h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .resource-hero h6 {
+        margin: 0px 50px;
+        text-align: center;
+    }
+}
+
+.featured .link-more {
+    color: var(--text-color-secondary);
+}
+
+.contact-us .link-icon {
+    color: #048f5a;
+    padding: 6px 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: #e3eeff;
+}
+
+.form div .border {
+    background-color: var(--background-color-secondary);
+}
+
+.border {
+    background-color: var(--background-color-secondary);
+}
+
+.contact-us p {
+    color: var(--text-color-secondary);
+    line-height: 180%;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contact-us h2 {
+    color: var(--text-color);
+    line-height: 180%;
+}
