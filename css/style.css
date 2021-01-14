@@ -72,10 +72,7 @@ h2 {
     font-size: calc(1rem + 1.5vw);
 }
 
-.float{
-	position:fixed;
-	bottom:300px;
-    right:10px;
+.btn-float {
     z-index: 1000;
     padding: 4px 8px;
 	color:#FFF;
